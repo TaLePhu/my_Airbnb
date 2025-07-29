@@ -1,0 +1,108 @@
+
+.app {
+    background-color: var(--white-color);
+}
+
+.header {
+    background-color: rgb(254, 254, 254);
+    height: 200px;
+}
+
+.header__top {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {    
+}
+
+.header__logo-link {
+    padding: 24px 0px;
+    display: block;
+    color: #ed3e61;
+}
+
+/* navigation */
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav__link:hover
+.nav__link-text {
+    color: #252a2b;
+}
+
+.nav__link.nav__link--active .nav__link-text {
+    color: #252a2b;
+    font-weight: 600;
+}
+
+.nav__link.nav__link--active::after {
+    content: "";
+    display: block;
+    background-color: #212121;
+    width: 100%;
+    height: 4px;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.nav__link .badge {
+    position: absolute;
+    top: -29px;
+    left: 44px;
+    background-color: #2d466e;
+    color: var(--white-color);
+    height: 18px;
+    padding: 0 8px;
+    line-height: 18px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 2px;
+    white-space: nowrap;
+}
+
+.nav__link-icon {
+     font-size: 3.6rem;
+}
+
+.nav__link-text {
+    color: #8b8b8b;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__language {
+}
+
+.header__menu {
+
+}
+
+.header__bottom {
+
+}

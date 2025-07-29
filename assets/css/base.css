@@ -6,6 +6,8 @@
 }
 :root {
   --primary-color: #ff385c;
+  --white-color: #fff;
+  --black-color: #000;
   --text-color: #222;
   --font-main: "Helvetica Neue", sans-serif;
 }
@@ -22,4 +24,40 @@ html {
 }
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid.wide {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+.btn {
+    border: none;
+    background-color: #f1f1f1;
+    padding: 11px 14px;
+    border-radius: 50%;
+
+}
+
+.btn:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
 }
