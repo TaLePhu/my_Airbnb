@@ -10,6 +10,9 @@
   --black-color: #000;
   --text-color: #222;
   --font-main: "Helvetica Neue", sans-serif;
+  --header-height: 200px;
+  --nav-height: 80px;
+  --header-search-height: 66px;
 }
 body {
   font-family: var(--font-main);
@@ -25,29 +28,6 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-.grid {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid.wide {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
 
 .btn {
     border: none;

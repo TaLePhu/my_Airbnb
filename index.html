@@ -6,6 +6,7 @@
     <title>My Airbnb</title>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
@@ -64,12 +65,78 @@
                     </div>
                 </div>
         
-                <div class="header__bottom"></div>
+                <div class="header__bottom">
+                    <ul class="header__search">
+                        <li class="header__search-item">
+                            <span class="header__search-title">Địa điểm</span>
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm điểm đến">
+                        </li>
+                        <li class="header__search-item">
+                            <span class="header__search-title">Nhận phòng</span>
+                            <span class="header__search-text">Thêm ngày</span>
+                        </li>
+                        <li class="header__search-item">
+                            <span class="header__search-title">Trả phòng</span>
+                            <span class="header__search-text">Thêm ngày</span>
+                        </li>
+                        <li class="header__search-item">
+                            <div class="header__search-item-left">
+                                <span class="header__search-title">Khách</span>
+                                <span class="header__search-text">Thêm khách</span>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
         </header>
 
         <main class="main">
+            <div class="grid wide">
+                <div class="grid app__content">
+                    <div class="app__content-top">
+                        <a href="#" class="app__content-title">
+                            Nơi lưu trú được ưa chuộng tại Hồ Chí Minh
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="app__content-top-right">
+                            <button class="product-section__arrow product-section__arrow--left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="product-section__arrow product-section__arrow--right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <ul class="row product-list">
+                        <li class="product-card">
+                            <div class="product-card__img-wrap">
+                                <img src="./assets/img/product/img_product1.avif" alt="Phòng 1" class="product-card__img">
+                                <div class="product-card__badge">
+                                Được khách yêu thích
+                                <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__name">Phòng chung tại Thành phố Hồ Chí Minh</div>
+                                <div class="product-card__desc">₫323.935 cho 2 đêm • ★ 4,86</div>
+                            </div>
+                        </li>
+                        <li class="product-card">
+                            <div class="product-card__img-wrap">
+                                <img src="./assets/img/product/img_product1.avif" alt="Phòng 1" class="product-card__img">
+                                <div class="product-card__badge">
+                                Được khách yêu thích
+                                <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__name">Phòng chung tại Thành phố Hồ Chí Minh</div>
+                                <div class="product-card__desc">₫323.935 cho 2 đêm • ★ 4,86</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
