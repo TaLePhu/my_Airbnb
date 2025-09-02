@@ -245,8 +245,127 @@
 
 }
 
+.product-section__arrow {
+    border: none;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+}
+
+.product-section__arrow:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.product-section__arrow i {
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+
+.product-section__arrow--left {
+    margin-right: 4px;
+    background-color: var(--white-color);
+    border: 1px solid #e4e4e4;
+}   
+.product-section__arrow--left i {
+    color: #bdbdbd;
+}
+
+.product-section__arrow--left:hover {
+    cursor: not-allowed;
+    background-color: var(--white-color);
+    
+}
+
+.product-section__arrow--left:hover i {
+    font-size: 0.9rem;
+    transition: font-size 0.2s;
+}
+
+/* Container danh sách sản phẩm */
+.product-list {
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+
+/* Card sản phẩm */
+.product-card {
+  display: block;               /* Giữ nguyên chiều rộng cố định khi scroll ngang */
+  width: 100%;                  /* Rộng giống như ảnh mẫu */
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+  background-color: var(--white-color);
+}
+
+/* Phần ảnh trong card */
+.product-card__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
 
 .product-card__img {
-    width: 192px;
-    height: 166px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Badge “Được khách yêu thích” */
+.product-card__badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Icon trái tim */
+.product-card__img-wrap i {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Phần thông tin */
+.product-card__info {
+  padding: 8px 10px;
+}
+
+.product-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.product-card__desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.3;
+}
+
+
+.footer {
+    height: 1000px;
 }
