@@ -67,13 +67,129 @@
         
                 <div class="header__bottom">
                     <ul class="header__search">
-                        <li class="header__search-item">
-                            <span class="header__search-title">Địa điểm</span>
+                        <li class="header__search-item header__search-location">
+                            <span class="header__search-title" tabindex="0">Địa điểm</span>
                             <input type="text" class="header__search-input" placeholder="Tìm kiếm điểm đến">
+                            <!-- Danh sách gợi ý địa điểm -->
+                            <div class="search-suggestion">
+                                <div class="search-suggestion__title">Điểm đến được đề xuất</div>
+                                <ul class="search-suggestion__list">
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/1_location.png" alt="Icon 1">
+                                        <div>
+                                            <div class="search-suggestion__name">Lân cận</div>
+                                            <div class="search-suggestion__desc">Tìm xung quanh bạn</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/2_vietnam.webp" alt="Icon 2">
+                                        <div>
+                                            <div class="search-suggestion__name">Hà Nội</div>
+                                            <div class="search-suggestion__desc">Vì danh sách yêu thích của bạn có chỗ ở tại Hà Nội</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/3_bangkok.png" alt="Icon 3">
+                                        <div>
+                                            <div class="search-suggestion__name">Vũng Tàu, Bà Rịa - Vũng Tàu</div>
+                                            <div class="search-suggestion__desc">Có đường bờ biển tuyệt đẹp</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/2_vietnam.webp" alt="Icon 2">
+                                        <div>
+                                            <div class="search-suggestion__name">Đà Lạt, Lâm Đồng</div>
+                                            <div class="search-suggestion__desc">Vì danh sách yêu thích của bạn có chỗ ở tại Đà Lạt</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/3_bangkok.png" alt="Icon 3">
+                                        <div>
+                                            <div class="search-suggestion__name">Bangkok, Thái Lan</div>
+                                            <div class="search-suggestion__desc">Có các thắng cảnh như Hoàng cung lớn</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/2_vietnam.webp" alt="Icon 2">
+                                        <div>
+                                            <div class="search-suggestion__name">Nha Trang, Khánh Hòa</div>
+                                            <div class="search-suggestion__desc">Phù hợp cho người yêu thiên nhiên</div>
+                                        </div>
+                                    </li>
+                                    <li class="search-suggestion__item">
+                                        <img class="search-suggestion__img" src="./assets/img/search-location/7_busan-korea.png" alt="Icon 1">
+                                        <div>
+                                            <div class="search-suggestion__name">Đà Nẵng, Đà Nẵng</div>
+                                            <div class="search-suggestion__desc">Có bãi biển Mỹ Khê nổi tiếng</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="header__search-item">
+                        <li class="header__search-item header__search-checkin">
                             <span class="header__search-title">Nhận phòng</span>
-                            <span class="header__search-text">Thêm ngày</span>
+                            <span class="header__search-text" tabindex="0">Thêm ngày</span>
+                            <div class="calendar-popup">
+                                <div class="calendar-popup__tabs">
+                                    <button class="calendar-popup__tab calendar-popup__tab--active">Ngày</button>
+                                    <button class="calendar-popup__tab">Tháng</button>
+                                    <button class="calendar-popup__tab">Linh hoạt</button>
+                                </div>
+                                <div class="calendar-popup__body">
+                                    <div class="calendar-popup__month">
+                                        <div class="calendar-popup__month-title">Tháng 9 năm 2025</div>
+                                        <div class="calendar-popup__days">
+                                            <div class="calendar-popup__day calendar-popup__day--label">T2</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T3</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T4</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T5</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T6</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T7</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">CN</div>
+                                            <!-- Các ngày trong tháng 9 -->
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day">1</div>
+                                            <div class="calendar-popup__day">2</div>
+                                            <div class="calendar-popup__day">3</div>
+                                            <div class="calendar-popup__day">4</div>
+                                            <div class="calendar-popup__day">5</div>
+                                            <!-- ... tiếp tục các ngày ... -->
+                                            <div class="calendar-popup__day">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-popup__month">
+                                        <div class="calendar-popup__month-title">Tháng 10 năm 2025</div>
+                                        <div class="calendar-popup__days">
+                                            <div class="calendar-popup__day calendar-popup__day--label">T2</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T3</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T4</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T5</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T6</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">T7</div>
+                                            <div class="calendar-popup__day calendar-popup__day--label">CN</div>
+                                            <!-- Các ngày trong tháng 10 -->
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day">1</div>
+                                            <div class="calendar-popup__day">2</div>
+                                            <div class="calendar-popup__day">3</div>
+                                            <div class="calendar-popup__day">4</div>
+                                            <div class="calendar-popup__day">5</div>
+                                            <!-- ... tiếp tục các ngày ... -->
+                                            <div class="calendar-popup__day">31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calendar-popup__footer">
+                                    <button class="calendar-popup__footer-btn calendar-popup__footer-btn--active">Ngày chính xác</button>
+                                    <button class="calendar-popup__footer-btn">± 1 ngày</button>
+                                    <button class="calendar-popup__footer-btn">± 2 ngày</button>
+                                    <button class="calendar-popup__footer-btn">± 3 ngày</button>
+                                    <button class="calendar-popup__footer-btn">± 7 ngày</button>
+                                    <button class="calendar-popup__footer-btn">± 14 ngày</button>
+                                </div>
+                            </div>
                         </li>
                         <li class="header__search-item">
                             <span class="header__search-title">Trả phòng</span>

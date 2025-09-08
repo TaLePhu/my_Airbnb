@@ -1,4 +1,3 @@
-
 .app {
     background-color: var(--white-color);
 }
@@ -165,6 +164,7 @@
 
 .header__search-title {
     margin-bottom: 4px;
+    width: 100%;
 }
 
 .header__search-item-left {
@@ -213,6 +213,87 @@
 .header__search-item:has(.header__search-btn:hover)::after {
     display: block;
 }
+
+/* header search suggestion */
+.header__search-location {
+    position: relative;
+}
+
+@keyframes popupScale {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.search-suggestion {
+    position: absolute;
+    top: calc(var(--header-search-height) + 14px);
+    left: 0;
+    width: 422px;
+    background-color: var(--white-color);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border-radius: 32px;
+    z-index: 1;
+    padding: 0 16px;
+    overflow: hidden;
+    transform-origin: center center;
+    display: none;
+}
+
+.header__search-location:focus-within .search-suggestion {
+    display: block;
+    animation: popupScale 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.search-suggestion__title {
+    padding: 24px 0 2px 8px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+
+}
+
+.search-suggestion__list {
+    list-style: none;
+    max-height: 340px;
+    overflow-y: auto;
+
+}
+
+.search-suggestion__item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.search-suggestion__item:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.search-suggestion__img {
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+}
+
+.search-suggestion__name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.search-suggestion__desc {
+    font-size: 1.3rem;
+    color: #b8b8b8;
+}
+
 
 /* product */
 .main {
@@ -458,4 +539,128 @@
 .footer-bottom__link-right:hover .footer-icon {
     background-color: #ebebeb;
     
+}
+
+.header__search-checkin {
+    position: relative;
+}
+
+@keyframes popupScale {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.calendar-popup {
+    position: absolute;
+    top: calc(var(--header-search-height) + 14px);
+    left: 0;
+    width: 700px;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    z-index: 10;
+    padding: 32px 32px 16px 32px;
+    display: none;
+    transform-origin: center center;
+}
+
+.header__search-checkin:focus-within .calendar-popup {
+    display: block;
+    animation: popupScale 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Tabs */
+.calendar-popup__tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.calendar-popup__tab {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    outline: none;
+}
+
+.calendar-popup__tab--active {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    color: #222;
+}
+
+/* Body */
+.calendar-popup__body {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 24px;
+}
+
+.calendar-popup__month {
+    flex: 1;
+}
+
+.calendar-popup__month-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.calendar-popup__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-popup__day {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #222;
+    border-radius: 50%;
+    background: none;
+}
+
+.calendar-popup__day--label {
+    color: #b8b8b8;
+    font-weight: 500;
+    background: none;
+}
+
+/* Footer */
+.calendar-popup__footer {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.calendar-popup__footer-btn {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+    color: #222;
+    cursor: pointer;
+    outline: none;
+}
+
+.calendar-popup__footer-btn--active {
+    border: 2px solid #222;
+    font-weight: 600;
 }
