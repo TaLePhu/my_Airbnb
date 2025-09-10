@@ -127,9 +127,10 @@
                             </div>
                         </li>
                         <li class="header__search-item header__search-checkin">
-                            <span class="header__search-title">Nhận phòng</span>
+                            <span class="header__search-title" tabindex="0">Nhận phòng</span>
                             <span class="header__search-text" tabindex="0">Thêm ngày</span>
-                            <div class="calendar-popup">
+                            <!-- Calendar popup -->
+                            <div class="calendar-popup" tabindex="0">
                                 <div class="calendar-popup__tabs">
                                     <button class="calendar-popup__tab calendar-popup__tab--active">Ngày</button>
                                     <button class="calendar-popup__tab">Tháng</button>
@@ -139,6 +140,7 @@
                                     <div class="calendar-popup__month">
                                         <div class="calendar-popup__month-title">Tháng 9 năm 2025</div>
                                         <div class="calendar-popup__days">
+                                            <!-- Dòng tiêu đề -->
                                             <div class="calendar-popup__day calendar-popup__day--label">T2</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T3</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T4</div>
@@ -146,21 +148,53 @@
                                             <div class="calendar-popup__day calendar-popup__day--label">T6</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T7</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">CN</div>
-                                            <!-- Các ngày trong tháng 9 -->
-                                            <div class="calendar-popup__day"></div>
-                                            <div class="calendar-popup__day"></div>
+                                            <!-- Tuần 1: 1/9 là thứ Hai, nên không cần ô trống -->
                                             <div class="calendar-popup__day">1</div>
                                             <div class="calendar-popup__day">2</div>
                                             <div class="calendar-popup__day">3</div>
                                             <div class="calendar-popup__day">4</div>
                                             <div class="calendar-popup__day">5</div>
-                                            <!-- ... tiếp tục các ngày ... -->
+                                            <div class="calendar-popup__day">6</div>
+                                            <div class="calendar-popup__day">7</div>
+                                            <!-- Tuần 2 -->
+                                            <div class="calendar-popup__day">8</div>
+                                            <div class="calendar-popup__day">9</div>
+                                            <div class="calendar-popup__day">10</div>
+                                            <div class="calendar-popup__day">11</div>
+                                            <div class="calendar-popup__day">12</div>
+                                            <div class="calendar-popup__day">13</div>
+                                            <div class="calendar-popup__day">14</div>
+                                            <!-- Tuần 3 -->
+                                            <div class="calendar-popup__day">15</div>
+                                            <div class="calendar-popup__day">16</div>
+                                            <div class="calendar-popup__day">17</div>
+                                            <div class="calendar-popup__day">18</div>
+                                            <div class="calendar-popup__day">19</div>
+                                            <div class="calendar-popup__day">20</div>
+                                            <div class="calendar-popup__day">21</div>
+                                            <!-- Tuần 4 -->
+                                            <div class="calendar-popup__day">22</div>
+                                            <div class="calendar-popup__day">23</div>
+                                            <div class="calendar-popup__day">24</div>
+                                            <div class="calendar-popup__day">25</div>
+                                            <div class="calendar-popup__day">26</div>
+                                            <div class="calendar-popup__day">27</div>
+                                            <div class="calendar-popup__day">28</div>
+                                            <!-- Tuần 5 -->
+                                            <div class="calendar-popup__day">29</div>
                                             <div class="calendar-popup__day">30</div>
+                                            <!-- Tháng 9 chỉ có 30 ngày, nên còn 5 ô trống cuối tuần -->
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
                                         </div>
                                     </div>
                                     <div class="calendar-popup__month">
                                         <div class="calendar-popup__month-title">Tháng 10 năm 2025</div>
                                         <div class="calendar-popup__days">
+                                            <!-- Dòng tiêu đề -->
                                             <div class="calendar-popup__day calendar-popup__day--label">T2</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T3</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T4</div>
@@ -168,7 +202,7 @@
                                             <div class="calendar-popup__day calendar-popup__day--label">T6</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">T7</div>
                                             <div class="calendar-popup__day calendar-popup__day--label">CN</div>
-                                            <!-- Các ngày trong tháng 10 -->
+                                            <!-- Tuần 1: 1/10 là thứ Tư, nên 2 ô trống đầu tuần -->
                                             <div class="calendar-popup__day"></div>
                                             <div class="calendar-popup__day"></div>
                                             <div class="calendar-popup__day">1</div>
@@ -176,8 +210,39 @@
                                             <div class="calendar-popup__day">3</div>
                                             <div class="calendar-popup__day">4</div>
                                             <div class="calendar-popup__day">5</div>
-                                            <!-- ... tiếp tục các ngày ... -->
+                                            <!-- Tuần 2 -->
+                                            <div class="calendar-popup__day">6</div>
+                                            <div class="calendar-popup__day">7</div>
+                                            <div class="calendar-popup__day">8</div>
+                                            <div class="calendar-popup__day">9</div>
+                                            <div class="calendar-popup__day">10</div>
+                                            <div class="calendar-popup__day">11</div>
+                                            <div class="calendar-popup__day">12</div>
+                                            <!-- Tuần 3 -->
+                                            <div class="calendar-popup__day">13</div>
+                                            <div class="calendar-popup__day">14</div>
+                                            <div class="calendar-popup__day">15</div>
+                                            <div class="calendar-popup__day">16</div>
+                                            <div class="calendar-popup__day">17</div>
+                                            <div class="calendar-popup__day">18</div>
+                                            <div class="calendar-popup__day">19</div>
+                                            <!-- Tuần 4 -->
+                                            <div class="calendar-popup__day">20</div>
+                                            <div class="calendar-popup__day">21</div>
+                                            <div class="calendar-popup__day">22</div>
+                                            <div class="calendar-popup__day">23</div>
+                                            <div class="calendar-popup__day">24</div>
+                                            <div class="calendar-popup__day">25</div>
+                                            <div class="calendar-popup__day">26</div>
+                                            <!-- Tuần 5 -->
+                                            <div class="calendar-popup__day">27</div>
+                                            <div class="calendar-popup__day">28</div>
+                                            <div class="calendar-popup__day">29</div>
+                                            <div class="calendar-popup__day">30</div>
                                             <div class="calendar-popup__day">31</div>
+                                            <!-- Tháng 10 có 31 ngày, còn 2 ô trống cuối tuần -->
+                                            <div class="calendar-popup__day"></div>
+                                            <div class="calendar-popup__day"></div>
                                         </div>
                                     </div>
                                 </div>
