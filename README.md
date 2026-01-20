@@ -9,7 +9,7 @@ A personal frontend UI clone project that focuses on recreating the Airbnb homep
 
 ### Header & Search
 ![Header Search](assets/images/3_Header-Search.png)
-![Header Search Expanded](assets/images/3.1_Header-search.png)
+![Header Search Expanded](assets/images/4_Header-Search.png)
 
 ### Footer
 ![Footer](assets/images/2_Footer.png)
